@@ -1,4 +1,4 @@
-# 🧠 Hadoop + Spark + Jupyter Cluster (Docker Compose)
+# Hadoop + Spark + Jupyter Cluster (Docker Compose)
 
 Este repositorio contén un **entorno completo de Big Data** baseado en contedores Docker, que integra:
 - **Hadoop (HDFS + YARN)**  
@@ -7,7 +7,7 @@ Este repositorio contén un **entorno completo de Big Data** baseado en contedor
 
 ---
 
-## 📂 Estrutura do repositorio
+## Estrutura do repositorio
 
 ```
 .
@@ -34,9 +34,9 @@ Este repositorio contén un **entorno completo de Big Data** baseado en contedor
 
 ---
 
-## 🚀 Despregue do clúster
+## Despregue do clúster
 
-### 1️⃣ Construír as imaxes
+### 1.Construír as imaxes
 
 Constrúe primeiro a imaxe base con Hadoop + Spark:
 
@@ -52,7 +52,7 @@ docker build -t adbgonzalez/spark-notebook:test-lean -f jupyter/Dockerfile jupyt
 
 ---
 
-### 2️⃣ Arrancar o clúster
+### 2. Arrancar o clúster
 
 ```bash
 docker compose up -d
@@ -71,7 +71,7 @@ Isto lanza os seguintes servizos:
 
 ---
 
-### 3️⃣ Acceso ás interfaces web
+### 3. Acceso ás interfaces web
 
 | Servizo | URL | Descrición |
 |----------|-----|------------|
@@ -82,9 +82,9 @@ Isto lanza os seguintes servizos:
 
 ---
 
-## 🧩 Uso básico
+## Uso básico
 
-### 📘 1. Proba rápida de Spark dende o notebook
+### 1. Proba rápida de Spark dende o notebook
 
 Abre [http://localhost:8888](http://localhost:8888) e crea un novo Notebook Python con este código:
 
@@ -110,7 +110,7 @@ O resultado deberías poder velo tamén no **Spark History Server** (http://loca
 
 ---
 
-## ⚙️ Directorios e volumes
+## Directorios e volumes
 
 Os volumes de datos de HDFS están xestionados automaticamente por Docker Compose:
 
@@ -122,7 +122,7 @@ Os volumes de datos de HDFS están xestionados automaticamente por Docker Compos
 
 ---
 
-## 🧼 Apagar o clúster
+## Apagar o clúster
 
 ```bash
 docker compose down
@@ -136,7 +136,7 @@ docker compose down -v
 
 ---
 
-## 🧠 Notas adicionais
+## Notas adicionais
 
 - O History Server require que o directorio `/spark-logs` exista en HDFS:
   ```bash
@@ -147,7 +147,7 @@ docker compose down -v
 
 ---
 
-## 🧩 Crédits
+## Créditos
 
 Configuración adaptada e mantida por **Adrián Blanco (CIFP A Carballeira)**  
-Baseada en imaxes personalizadas de Hadoop + Spark para docencia e práctica en contornos de Big Data.
+
