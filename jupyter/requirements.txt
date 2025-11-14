@@ -4,6 +4,9 @@ findspark
 pandas
 numpy
 
+# para compatibilidade con delta
+delta-spark==3.2.0
+
 # JupyterLab e widgets
 jupyterlab
 ipywidgets
