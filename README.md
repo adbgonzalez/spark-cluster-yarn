@@ -51,8 +51,14 @@ docker build -t adbgonzalez/spark-notebook:test-lean -f jupyter/Dockerfile jupyt
 ```
 
 ---
+### 2. Descargar os jars e copialos ao directorio ./jars
+Son necesarios os seguintes jars:
+- [`hadoop-aws-3.3.6.jar`](https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws/3.3.6)
+- [`aws-java-sdk-bundle-1.12.x.jar`](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-bundle/1.12.262)
+Hai que descargalos e copialos ao directorio `./jars`.
 
-### 2. Arrancar o clúster
+---
+### 3. Arrancar o clúster
 
 ```bash
 docker compose up -d
@@ -71,7 +77,7 @@ Isto lanza os seguintes servizos:
 
 ---
 
-### 3. Acceso ás interfaces web
+### 4. Acceso ás interfaces web
 
 | Servizo | URL | Descrición |
 |----------|-----|------------|
@@ -79,6 +85,7 @@ Isto lanza os seguintes servizos:
 | **HDFS NameNode** | [http://localhost:9870](http://localhost:9870) | Navegador de ficheiros de HDFS |
 | **YARN ResourceManager** | [http://localhost:8088](http://localhost:8088) | Seguimento de tarefas YARN |
 | **Spark History Server** | [http://localhost:18080](http://localhost:18080) | Histórico de aplicacións Spark |
+| **MinIO** | http://localhost:9001](http://localhost:9001) | Acceso a almacenamento MinIO |
 
 ---
 
